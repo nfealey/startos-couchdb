@@ -13,7 +13,7 @@ export const manifest = setupManifest({
   volumes: ['main', 'config'],
   images: {
     main: {
-      source: { dockerTag: 'couchdb:3.5.2.1' },
+      source: { dockerTag: 'couchdb:3.5.3' },
       arch: ['x86_64', 'aarch64'],
     },
   },

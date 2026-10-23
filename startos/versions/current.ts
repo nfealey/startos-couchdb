@@ -1,18 +1,18 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '3.5.2:1',
+  version: '3.5.3:0',
   releaseNotes: {
     en_US:
-      '- Compact Databases asks for confirmation with a warning that it permanently discards the stored contents of old document revisions.',
+      '- Updates CouchDB to 3.5.3, a security release that fixes six vulnerabilities, including a denial of service any client can trigger without logging in, and a flaw that let a CouchDB admin run shell commands inside the container. Updating is strongly recommended.',
     es_ES:
-      '- Compactar bases de datos pide confirmación con una advertencia de que descarta de forma permanente el contenido almacenado de las revisiones antiguas de los documentos.',
+      '- Actualiza CouchDB a 3.5.3, una versión de seguridad que corrige seis vulnerabilidades, entre ellas una denegación de servicio que cualquier cliente puede provocar sin iniciar sesión y un fallo que permitía a un administrador de CouchDB ejecutar comandos de shell dentro del contenedor. Se recomienda encarecidamente actualizar.',
     de_DE:
-      '- Datenbanken komprimieren fragt mit dem Hinweis nach Bestätigung, dass die gespeicherten Inhalte alter Dokumentrevisionen dauerhaft verworfen werden.',
+      '- Aktualisiert CouchDB auf 3.5.3, eine Sicherheitsversion, die sechs Schwachstellen behebt – darunter eine Denial-of-Service-Lücke, die jeder Client ohne Anmeldung auslösen kann, und einen Fehler, durch den ein CouchDB-Administrator Shell-Befehle im Container ausführen konnte. Ein Update wird dringend empfohlen.',
     pl_PL:
-      '- Kompaktuj bazy danych prosi o potwierdzenie z ostrzeżeniem, że trwale usuwa zapisaną zawartość starych rewizji dokumentów.',
+      '- Aktualizuje CouchDB do wersji 3.5.3, wydania bezpieczeństwa naprawiającego sześć luk, w tym odmowę usługi, którą każdy klient może wywołać bez logowania, oraz błąd pozwalający administratorowi CouchDB uruchamiać polecenia powłoki w kontenerze. Aktualizacja jest zdecydowanie zalecana.',
     fr_FR:
-      "- Compacter les bases de données demande une confirmation en avertissant qu'il supprime définitivement le contenu stocké des anciennes révisions des documents.",
+      "- Met à jour CouchDB vers 3.5.3, une version de sécurité qui corrige six vulnérabilités, dont un déni de service que tout client peut déclencher sans se connecter et une faille permettant à un administrateur CouchDB d'exécuter des commandes shell dans le conteneur. La mise à jour est fortement recommandée.",
   },
   migrations: {
     up: async ({ effects }) => {},
